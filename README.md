@@ -1,23 +1,35 @@
-# Citadel Map Coordinate Extraction Tool
+# Finding Amman’s Citadel Entrance  
+### Citadel Map Coordinate Extraction Tool
 
-## 📌 Description
-This project extracts boundary coordinate points from a real map image
-to build a realistic simulation environment.
+## 📌 Overview
+This project is a Python-based tool designed to extract accurate boundary
+coordinate points from a real map image in order to build a realistic
+simulation environment.  
+The extracted coordinates are intended to support simulations that analyze
+movement and navigation toward the entrance of **Amman’s Citadel**.
 
-The user clicks along the boundary of the map, and the tool generates
-NumPy coordinate points that can be reused in another simulation file.
+---
 
-## 🗺️ How It Works
-1. The map image is displayed (vertically flipped for correct alignment)
-2. User clicks along the boundary starting from the entrance
-3. Press ENTER to finish
-4. Coordinates are printed and copied into `citadel_walker.py`
+## 🎯 Project Objectives
+- Convert real-world map boundaries into usable coordinate data
+- Enable accurate simulation and analysis of spatial movement
+- Provide a simple interactive tool for manual boundary selection
+- Support further simulation logic in a separate walker module
 
-## 📂 Files
-- `boundary_point_picker.py` : Main tool for extracting points
-- `citadel_map.png` : Map image
-- `citadel_walker.py` : Simulation file that uses the points
+---
 
-## ▶️ How to Run
-```bash
-python boundary_point_picker.py
+## 🗺️ How the Tool Works
+1. A map image is loaded and vertically flipped to ensure correct coordinate alignment
+2. The user clicks sequentially along the boundary, starting from the entrance
+3. Each click records a coordinate point
+4. The selected boundary is visualized in real time
+5. Pressing **ENTER** finalizes the selection
+6. The tool outputs NumPy-formatted coordinates ready for reuse
+
+## 🧑‍🤝‍🧑 Team Members
+- **Hala Dayyeh**
+- **Sondos Awwad**
+
+---
+
+## 📂 Project Structure
